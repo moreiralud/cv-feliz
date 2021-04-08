@@ -1,0 +1,85 @@
+header{ 
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: #7C5E99;
+    border-bottom: 10px solid #000;
+    padding: 50px 20px;
+}
+
+nav{
+    text-align: right;
+}
+
+a{
+    display:inline-flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: "Fira Code", Arial, Helvetica, Sans-Serif;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 30px;
+}
+
+a:before{ 
+content: " "; /* Uso brigatório no after ou before(pseudoelemento)*/
+background-color: #F25A70;
+width: 10px;
+height: 10px;
+margin-right: 10px;
+
+}
+a:hover {
+    color:#000;
+  }
+
+#button{
+    display: inline-block;
+    background-color:#F25A70;
+    box-shadow: 5px 5px 0px #000;
+    padding: 18px 20px;
+    margin-right: 0;
+    /*oq faz com que fique uma borda. Para esfumar, altere o 0px. Lembre 
+    que o eixo cartesiano é invertido ao que costumamos ver. Para cima é negativo. Ex -20, mas a ordem é
+     x y esfumaçar cor
+     o contúdo do display inline é o conteúdo*/
+
+    
+}
+
+
+
+
+/* 
+
+Display inline:
+- nao consegue definir width e o heigth. 
+- Inline vira um comportamento de palavra,ou seja, uma caixa.
+-  é possível fazer a centralização pela tag pai
+- display inline é ficar na mesma linha
+- a tag a ja inline por natureza
+
+o justify não justifica a ultima linha   o contúdo do display inline é o conteúdo
+
+Display block
+- aqui vc define a altura e largura
+- não fica na mesma linha
+- nao tem comportamento de palavra
+- o tamanho é sempre a largura  do pai ou 100%
+- altura é o conteúdo
+
+Display inline-block
+- mesma linha
+- permite definir altura e largura
+- comportamento de palavra*/
+
+
+/* line-height: quando for uma unica linha, para centralizar usar o mesmo valor da height para centralizar. 
+    Com <br>, que faz com que fique duas linhas, não funciona */
+
+   /* box-shadow: 5px 5px 0px black; 
+    oq faz com que fique uma borda. Para esfumar, altere o 0px. Lembre 
+    que o eixo cartesiano é invertido ao que costumamos ver. Para cima é negativo. Ex -20, mas a ordem é
+     x y esfumaçar cor
+     o contúdo do display inline é o conteúdo*/
